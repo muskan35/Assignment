@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="content">
+                <div class="nav-tab">
+                    <span class="profile-select" style="color: white;">Profile</span>
+                    <hr style="width:100%;text-align:left;margin-left:0">
+                    <a href="./post5.html" class="posts-select">Posts</a>
+                    <hr style="width:100%;text-align:left;margin-left:0">
+                    <a href="./gallery5.html" class="gallery-select">Gallery</a>
+                    <hr style="width:100%;text-align:left;margin-left:0">
+                    <a href="./todo5.html" class="todo-select">ToDo</a>
+                </div>
+                <div class="details">
+                    <div class="header-content">
+                        <div class="header-left">
+                            <span class="profile-name">Profile</span>
+                            <hr style="width: 1500%; margin: 20px;color: lightgray;">
+                        </div>
+                        <div class="header-right" onclick="toggleMenu()">
+                            <div class="image">
+                                <img src="images/img5.jpg" alt="profilepic">
+                            </div>
+                            <span class="name">Chelsey Dietrich</span>
+                        </div>
+                        <div class="sub-menu-wrap" id="subMenu">
+                            <div class="sub-menu">
+                                <div class="user-info">
+                                    <img src="images/img5.jpg" alt="profilepic">
+                                    <span class="prof-name">Chelsey Dietrich</span>
+                                    <span class="prof-email">Lucio_Hettinger@annie.ca</span>
+                                </div>
+                                <hr>
+                                <div class="user1">
+                                    <img src="images/img4.jpg" alt="profilepic">
+                                    <span class="prof-name1">Patricia Lebsack</span>
+                                </div>
+                                <hr>
+                                <div class="user2">
+                                    <img src="images/img6.jpg" alt="profilepic">
+                                    <span class="prof-name2">Dennis Schulist</span>
+                                </div>
+                                <hr>
+                                <div class="signout">
+                                    <a href="./index.html">
+                                        <button id="logout">Sign Out</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="image-prof">
+                                <img src="images/img5.jpg" alt="profilepic">
+                            </div>
+                            <div class="name-prof">
+                                <span class="name">Chelsey Dietrich</span>
+                            </div>
+                            <div class="details-user">
+                                <div class="card-details">
+                                    <span class="user-name">Username</span>
+                                    <span class="email">e-mail</span>
+                                    <span class="phone">Phone</span>
+                                    <span class="website">Website</span>
+                                </div>
+                                <div class="values">
+                                    <span class="val-name">: Kamren</span>
+                                    <span class="val-email">: Lucio_Hettinger@annie.ca</span>
+                                    <span class="val-phone">: (254)954-hotlink-ok89</span>
+                                    <span class="val-website">: demarco.info</span>
+                                </div>
+                            </div>
+                            <hr style="width: 70%; margin: 10px;">
+                            <div class="name-comp">
+                                <span class="company-name">Company</span>
+                            </div>
+                            <div class="details-company">
+                                <div class="comp-details">
+                                    <span class="com-name">Name</span>
+                                    <span class="catch-phrase">catchphrase</span>
+                                    <span class="bs">bs</span>
+                                </div>
+                                <div class="comp-values">
+                                    <span class="com-name">: Keebler LLC</span>
+                                    <span class="catch-phrase">: User-centric fault-tolerant solution</span>
+                                    <span class="bs">: revolutionize end-to-end systems</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="address">
+                            <div class="add">
+                                <span class="add-name">Address :</span>
+                            </div>
+                            <div class="details-address">
+                                <div class="add-details">
+                                    <span class="street">Street</span>
+                                    <span class="suite">Suite</span>
+                                    <span class="city">City</span>
+                                    <span class="zipcode">Zipcode</span>
+                                </div>
+                                <div class="add-values">
+                                    <span class="add-streetname">: Skiles Walks</span>
+                                    <span class="add-suite">: Suite 351</span>
+                                    <span class="add-city">: Roscoeview</span>
+                                    <span class="add-zip">: 33263</span>
+                                </div>
+                            </div>
+                            <div class="map">
+                                <img src="images/map.png" alt="profilepic">
+                            </div>
+                            <div class="lat-long">
+                                <div class="lat">
+                                    <span class="lat-id">Lat :</span>
+                                </div>
+                                <div class="lat-value">
+                                    <span class="lat-val">-31.8hotlink</span>
+                                </div>
+                                <div class="long">
+                                    <span class="long-id">Long :</span>
+                                </div>
+                                <div class="long-value">
+                                    <span class="long-val">62.5342</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chatbox" onclick="toggleChat()">
+                    <div class="media-icon">
+                        <i class="fa-regular fa-message"></i>
+                    </div>
+                    <div class="chat">
+                        <span class="chats">Chats</span>
+                    </div>
+                    <div class="up-arrow">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                    <div class="sub-chat-wrap" id="subChat">
+                        <div class="sub-chat">
+                            <div class="account2">
+                                <div class="image">
+                                    <img src="images/img1.jpg" alt="profilepic">
+                                </div>
+                                <div class="name-user">
+                                    <span>Leanne Graham</span>
+                                </div>
+                            </div>
+                            <div class="account3">
+                                <div class="image">
+                                    <img src="images/img2.png" alt="profilepic">
+                                </div>
+                                <div class="name-user">
+                                    <span>Ervin Howell</span>
+                                </div>
+                            </div>
+                            <div class="account4">
+                                <div class="image">
+                                    <img src="images/img3.jpg" alt="profilepic">
+                                </div>
+                                <div class="name-user">
+                                    <span>Clementine Bauch</span>
+                                </div>
+                            </div>
+                            <div class="account5">
+                                <div class="image">
+                                    <img src="images/img4.jpg" alt="profilepic">
+                                </div>
+                                <div class="name-user">
+                                    <span>Patricia Lebsack</span>
+                                </div>
+                            </div>
+                            <div class="account6">
+                                <div class="image">
+                                    <img src="images/img6.jpg" alt="profilepic">
+                                </div>
+                                <div class="name-user">
+                                    <span>Mrs. Dennis Schulist</span>
+                                </div>
+                            </div>
+                            <div class="account7">
+                                <div class="image">
+                                    <img src="images/img7.jpg" alt="profilepic">
+                                </div>
+                                <div class="name-user">
+                                    <span>Kurtis Weissnat</span>
+                                </div>
+                            </div>
+                            <div class="account8">
+                                <div class="image">
+                                    <img src="images/img8.jpg" alt="profilepic">
+                                </div>
+                                <div class="name-user">
+                                    <span>Nicholas Runolfsdottir V</span>
+                                </div>
+                            </div>
+                            <div class="account9">
+                                <div class="image">
+                                    <img src="images/img9.jpg" alt="profilepic">
+                                </div>
+                                <div class="name-user">
+                                    <span>Glenna Reichert</span>
+                                </div>
+                            </div>
+                            <div class="account10">
+                                <div class="image">
+                                    <img src="images/img10.jpg" alt="profilepic">
+                                </div>
+                                <div class="name-user">
+                                    <span>Clementina DuBuque</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+    let subMenu = document.getElementById("subMenu");
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu")
+    }
+
+    let subChat = document.getElementById("subChat");
+    function toggleChat(){
+        subChat.classList.toggle("open-chat")
+    }
+</script>
+
+</body>
+</html>

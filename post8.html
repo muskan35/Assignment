@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts Page</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="content">
+                <div class="nav-tab">
+                    <a href="./profile8.html" class="profile-select">Profile</a>
+                    <hr style="width:100%;text-align:left;margin-left:0">
+                    <span class="posts-select" style="color: white;">Posts</span>
+                    <hr style="width:100%;text-align:left;margin-left:0">
+                    <a href="./gallery8.html" class="gallery-select">Gallery</a>
+                    <hr style="width:100%;text-align:left;margin-left:0">
+                    <a href="./todo8.html" class="todo-select">ToDo</a>
+                </div>
+                <div class="details">
+                    <div class="header-content">
+                        <div class="header-left">
+                            <span class="profile-name">Posts</span>
+                            <hr style="width: 1500%; margin: 20px;color: lightgray;">
+                        </div>
+                        <div class="header-right" onclick="toggleMenu()">
+                            <div class="image">
+                                <img src="images/img8.jpg" alt="profilepic">
+                            </div>
+                            <span class="name">Nicholas Runolfsdottir</span>
+                        </div>
+                        <div class="sub-menu-wrap" id="subMenu">
+                            <div class="sub-menu">
+                                <div class="user-info">
+                                    <img src="images/img8.jpg" alt="profilepic">
+                                    <span class="prof-name">Nicholas</span>
+                                    <span class="prof-email">Sherwood@rosamond.me</span>
+                                </div>
+                                <hr>
+                                <div class="user1">
+                                    <img src="images/img7.jpg" alt="profilepic">
+                                    <span class="prof-name1">Kurtis Weissnat</span>
+                                </div>
+                                <hr>
+                                <div class="user2">
+                                    <img src="images/img9.jpg" alt="profilepic">
+                                    <span class="prof-name2">Glenna Reichert</span>
+                                </div>
+                                <hr>
+                                <div class="signout">
+                                    <a href="./index.html">
+                                        <button id="logout">Sign Out</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="coming">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chatbox">
+                    <div class="media-icon">
+                        <i class="fa-regular fa-message"></i>
+                    </div>
+                    <div class="chat">
+                        <span class="chats">Chats</span>
+                    </div>
+                    <div class="up-arrow">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+    let subMenu = document.getElementById("subMenu");
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu")
+    }
+</script>
+
+</body>
+</html>

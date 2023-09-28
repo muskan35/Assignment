@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: left;
+    /* justify-content: center; */
+    background: white;
+    margin: 0px;
+}
+
+.content{
+    display: flex;
+    /* flex-direction: column; */
+    margin: 5px;
+    padding: 5px;
+    align-items: left;
+    /* justify-content: center; */
+}
+
+.nav-tab{
+    margin: 10px;
+    padding: 150px 40px 150px 40px;
+    background-color: rgb(68, 68, 225);
+    width: 250px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    border-radius: 15%;
+    color: lightgray;
+    /* cursor: pointer; */
+}
+
+.details{
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-select, .posts-select, .gallery-select, .todo-select{
+    cursor: pointer;
+}
+
+.profile-select:hover{
+    color: white;
+}
+
+.posts-select:hover{
+    color: white;
+}
+
+.gallery-select:hover{
+    color: white;
+}
+
+.todo-select:hover{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: lightgray
+}
+
+.image-prof{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    /* background: black; */
+}
+
+.image-prof img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+section .content .image{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 3px;
+    /* background: black; */
+}
+
+section .content .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    /* border: 3px solid blue; */
+}
+
+.name{
+    margin: 10px;
+}
+
+.profile-name{
+    margin: 10px 0px 0px 20px;
+}
+
+.header-left{
+    float: left;
+    margin: 10px;
+}
+
+.header-right{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    margin: 0px 5px 0px 750px;
+    float: right;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    position: absolute;
+    top: 20px;
+    /* right: 100px; */
+}
+
+.card{
+    margin: 10px 0px 0px 50px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    width: 1000px;
+}
+
+.card-content{
+    padding: 10px;
+    margin: 70px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 450px;
+    /* background-color: blue; */
+}
+
+.details-user, .details-company, .details-address{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-details, .comp-details{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-top: 10px;
+    text-align: right;
+    color: grey;
+    font-size: small;
+}
+
+.values, .comp-values{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: small;
+}
+
+.company-name{
+    color: grey;
+}
+
+.line{
+    border-left: 1px solid lightgray;
+    height: 420px;
+    position: absolute;
+    left: 52%;
+    top: 90px;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+    margin: 70px 0px 0px 10px;
+    padding: 10px;
+    height: 450px;
+    width: 100%;
+    /* float: right; */
+}
+
+.add{
+    color: grey;
+}
+
+.add-details{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 10px;
+    color: grey;
+    font-size: small;
+}
+
+.add-values{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 370px 100px -10px;
+    font-size: small;
+}
+
+.map{
+    padding: 5px;
+    margin: -90px 0px 0px 0px;
+}
+
+.map img{
+    height: 250px;
+    width: 550px;
+    border-radius: 5%;
+}
+
+.lat-long{
+    display: flex;
+    flex-direction: row;
+}
+
+.lat{
+    position: absolute;
+    left: 1100px;
+    font-size: small;
+    color: grey;
+}
+
+.long-value{
+    position: absolute;
+    left: 1250px;
+    font-size: small;
+}
+
+.long{
+    position: absolute;
+    left: 1210px;
+    font-size: small;
+    color: grey;
+}
+
+.lat-value{
+    position: absolute;
+    left: 1130px;
+    font-size: small;
+}
+
+.chatbox{
+    position: absolute;
+    margin: 530px 0px 0px 1000px;
+    background-color: rgb(68, 68, 225);
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 29px;
+    /* justify-content: space-between; */
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+}
+
+.media-icon{
+    /* padding: 5px; */
+    margin: 7px;
+    color: white;
+}
+
+.chat{
+    /* padding: 5px; */
+    margin: 2px;
+    text-align: left;
+    color: white;
+}
+
+.up-arrow{
+    margin: 2px 2px 2px 190px;
+    float: right;
+    color: white;
+}
+
+.sub-menu-wrap{
+    position: absolute;
+    top: 60%;
+    right: 0%;
+    width: 250px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+
+.sub-menu{
+    padding: 10px;
+    margin: 10px;
+    background-color: lightgray;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+section .content .user-info{
+    height: 150px;
+    width: 120px;
+    border-radius: 50%;
+    padding: 3px;
+    /* margin-right: 50px; */
+    align-items: center;
+    /* background: black; */
+}
+
+section .content .user-info img{
+    height: 70%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+    /* border: 3px solid blue; */
+}
+
+section .content .user-info .prof-name{
+    font-size: small;
+}
+
+.prof-email{
+    font-size: small;
+    color: white;
+}
+
+.user1 img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user2 img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user1, .user2{
+    height: 50px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 3px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.prof-name1, .prof-name2{
+    font-size: small;
+    color: black;
+    /* padding: 2px; */
+    margin: 5px 0px 0px 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#logout {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px 50px 5px 70px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+  
+#logout[disabled] {
+    background-color: lightgray;
+    color: gray;
+}
+
+.coming{
+    padding: 20px;
+    font-size: xxx-large;
+    font-weight: 9000;
+    color: gray;
+    margin: 150px 0px 0px 100px;
+}
+
+.account1, .account2, .account3, .account4, .account5, .account6, .account7, .account8, .account9, .account10{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    margin: 5px;
+    color: blue;
+}
+
+.sub-chat{
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 100;
+    background-color: white;
+    color: black;
+    width: 300px;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.sub-chat-wrap{
+    position: absolute;
+    bottom: 90%;
+    right: 2%;
+    width: 300px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-chat-wrap.open-chat{
+    max-height: 400px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 2px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: lightgray;
+    border-radius: 5px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: gray;
+    border-radius: 5px; 
+}
+
+.name-user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    color: black;
+}
